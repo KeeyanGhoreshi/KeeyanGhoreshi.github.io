@@ -1,0 +1,53 @@
+body{
+    background-color: #444;
+    text-transform: uppercase;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+svg{
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    margin: 0px auto;
+    position:absolute;
+
+}
+
+h1.header{
+    position: absolute;
+    min-height: 100%;
+    width: 100vw;
+    color: #888;
+    text-transform: uppercase;
+    font-size: 8vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+p{
+    display: flex;
+    color:#DDD;
+    min-height: 130%;
+    font-size: 3vmin;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+p#p1{
+    width: 50vw;
+}
+
+
+p#p2{
+    width: 100vw;
+}
+p#p3{
+    width: 150vw;
+}
