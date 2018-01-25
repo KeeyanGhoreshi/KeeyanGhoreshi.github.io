@@ -1,6 +1,7 @@
 body{
-    background-color: #444;
+    background-color: #FFF;
     text-transform: uppercase;
+    font-family: Raleway, sans-serif;
 }
 
 .nodes circle {
@@ -11,7 +12,7 @@ body{
 svg{
     display: block;
     width: 100%;
-    min-height: 100px;
+    min-height: 100%;
     margin: 0px auto;
     position:absolute;
 
@@ -19,35 +20,48 @@ svg{
 
 h1.header{
     position: absolute;
-    min-height: 100%;
-    width: 100vw;
-    color: #888;
+    min-height: 10%;
+    color: #EEE;
+    width: 30vmin;
     text-transform: uppercase;
-    font-size: 8vmin;
+    font-size: 3vmin;
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+div.card{
+    margin:0 auto;
+    margin-top: 2.5vh;
+     box-shadow: -15px 15px 8px #222;
+    width:95vw;
+    height:95vh;
 
+    background-color:#666;
+
+}
 p{
     display: flex;
     color:#DDD;
-    min-height: 130%;
-    font-size: 3vmin;
+    font-size: 2vmin;
     align-items: center;
     justify-content: center;
     position: absolute;
 }
 
 p#p1{
-    width: 50vw;
+    width: 27vmin;
+    min-height: 20%;
 }
 
 
 p#p2{
-    width: 100vw;
+    width: 27vmin;
+    min-height: 30%;
+
 }
 p#p3{
-    width: 150vw;
+    width:27vmin;
+        min-height: 40%;
 }

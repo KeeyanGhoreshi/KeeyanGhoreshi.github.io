@@ -194,7 +194,7 @@ function doubleHelix(){
         .attr("y1", function(d,i){return y(d[1].y)-z(d[1].z)*((d[0].y<d[1].y)?1:-1)})
         .attr("x2", function(d,i) {return d[0].x} )
         .attr("y2", function(d,i) {return y(d[0].y)+z(d[0].z)*((d[0].y<d[1].y)?1:-1)})
-        .attr("stroke",function(d,i){return node.filter(function(d,c){return i===c}).attr("fill");})
+        .attr("stroke",function(d,i){var index = i-i%2; return node.filter(function(d,c){return index===c}).attr("fill");})
         .attr("stroke-width",4);
 }
 function transitionHelix(){

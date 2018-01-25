@@ -153,13 +153,13 @@ for(var i=0; i<=height/hexHeight; i++){
         .duration(1500)
         .attr("stroke-opacity",.05);
 function swipe(){
-    svg.selectAll("line").transition()
-    .attr("stroke-opacity",1)
+    svg.selectAll("g.links").selectAll("line").data(connections).transition()
+    .attr("stroke-opacity",function(){return Math.random()>.25?1:0})
         .delay(function(d,i){return hexGridLocator[d.source[0]][d.source[1]].delay;})
         .duration(500)
         .transition()
         .duration(1500)
-        .attr("stroke-opacity",.05);
+        .attr("stroke-opacity",0);
 }
 
 //setInterval(swipe,2000)
