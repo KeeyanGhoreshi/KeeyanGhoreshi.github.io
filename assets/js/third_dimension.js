@@ -19,13 +19,13 @@ light1.castShadow = true;            // default false
 light1.shadowDarkness =1;
 scene.add( light1 );
 
-var light2 = new THREE.SpotLight( 0xffffff, 1, 500 );
+var light2 = new THREE.SpotLight( 0xffffff, 2, 500 );
 light2.position.set( -100, 15, -260 );
 light2.castShadow = true;            // default false
 light2.shadowDarkness =1;
 scene.add( light2 );
 
-var light3 = new THREE.SpotLight( 0xffffff, 1, 500 );
+var light3 = new THREE.SpotLight( 0xffffff, 2, 500 );
 light3.position.set( -100, 15, -420 );
 light3.castShadow = true;            // default false
 light3.shadowDarkness =1;
