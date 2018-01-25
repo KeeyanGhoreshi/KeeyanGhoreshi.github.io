@@ -11,22 +11,23 @@ renderer.shadowCameraFov = 50;
 
 renderer.shadowMapBias = 0.0039;
 renderer.shadowMapDarkness = 0.5;
-
+var base_width = Math.ceil(divrect.width/5)
+var width = base_width*2
 //Create a PointLight and turn on shadows for the light
 var light1 = new THREE.SpotLight( 0xffffff, 2, 0 );
-light1.position.set( -100, 15, -100 );
+light1.position.set( -width/3.5, 15, -100 );
 light1.castShadow = true;            // default false
 light1.shadowDarkness =1;
 scene.add( light1 );
 
 var light2 = new THREE.SpotLight( 0xffffff, 2, 500 );
-light2.position.set( -100, 15, -260 );
+light2.position.set( -width/3.5, 15, -260 );
 light2.castShadow = true;            // default false
 light2.shadowDarkness =1;
 scene.add( light2 );
 
 var light3 = new THREE.SpotLight( 0xffffff, 2, 500 );
-light3.position.set( -100, 15, -420 );
+light3.position.set( -width/3.5, 15, -420 );
 light3.castShadow = true;            // default false
 light3.shadowDarkness =1;
 scene.add( light3 );
@@ -38,8 +39,7 @@ scene.add( light3 );
             //scene.add( grid );
             scene.fog = new THREE.FogExp2( 0x000000, 0.0098 );
 renderer.setClearColor( scene.fog.color, 1 );
-var base_width = Math.ceil(divrect.width/5)
-var width = base_width*2
+
 var nH = 160;
 var geometry1 = new THREE.PlaneGeometry(base_width*2, 160, width, nH);
 var geometry2 = new THREE.PlaneGeometry(base_width*2, 160, width, nH);
