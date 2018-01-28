@@ -22,7 +22,7 @@ h1.header{
     position: absolute;
     min-height: 10%;
     color: #EEE;
-    width: 30vmin;
+    width: 32.5vmin;
     text-transform: uppercase;
     font-size: 3vmin;
 
@@ -51,17 +51,17 @@ p{
 }
 
 p#p1{
-    width: 27vmin;
+    width: 29.5vmin;
     min-height: 20%;
 }
 
 
 p#p2{
-    width: 27vmin;
+    width: 29.5vmin;
     min-height: 30%;
 
 }
 p#p3{
-    width:27vmin;
+    width:29.5vmin;
         min-height: 40%;
 }
